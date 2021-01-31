@@ -281,14 +281,17 @@ option {
     .techProducts {
         display: grid;
         grid-template-columns: auto auto;
+        margin: 0;
     }
     .linkProducts {
         margin: 0 auto;
     }
-    .cardImages {
+    /* .cardImages {
         height: 20vh;
+    } */
+    .card {
+        width: 200px;
     }
-
     .card-body {
         padding: 1em 0.3em 1em 0.3em;
     }
@@ -342,6 +345,7 @@ option {
     .techProducts {
         display: grid;
         grid-template-columns: auto auto auto;
+        margin: 0;
     }
     .cardImages {
         height: 50vh;
