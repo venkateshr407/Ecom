@@ -11,7 +11,6 @@ import { Link } from 'react-router-dom';
 
 
 
-
 export class Categories extends Component {
     constructor(props){
         super(props);
