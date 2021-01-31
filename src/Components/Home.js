@@ -23,15 +23,15 @@ export default function Home() {
         },
     ])
     return (
-        <div className="container linkProducts ">
+        <div className="container">
             <Header/>
             <div className="linkProducts">
                 <h2>Home Accessories</h2>
                 <div className="techProducts">
                 {products.map((product) => (
                     <div className="cards d-flex" key={product.id}>
-                        <div className="card" style={{width: "15rem"}}>
-                            <img src={product.images}style={{objectFit:"cover", height:"auto"}} className="card-img-top" alt={product.title}/>
+                        <div className="card" style={{width:"60%",height:"auto"}}>
+                            <img src={product.images} className="card-img-top" alt={product.title}/>
                                 <div className="card-body">
                                     <h6 className="card-title">{product.title}</h6>
                                     <p className="card-text">{product.price}</p>

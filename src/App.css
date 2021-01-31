@@ -46,10 +46,9 @@ body {
     height: 100vh;
 }
 .content {
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(235, 235, 235);
     border-radius: 5px;
-    padding: 1em;
-    overflow: auto;
+    padding: 0.2em;
     height: 120vh;
 }
 .filter {
@@ -106,7 +105,15 @@ body {
     font-size: 0.8em;
     color: var(--post-dark-color);
 }
-
+.cardImage {
+    object-fit: contain;
+}
+.card {
+    width: 15rem;
+}
+.cards {
+    height: 40%;
+}
 .content h6 {
     font-weight: 900;
     text-transform: uppercase;
@@ -114,7 +121,9 @@ body {
 }
 .itemsContent {
     background-color: rgb(246, 246, 246);
+    height: 100%;
 }
+
 link {
     background-color: rgb(231, 231, 231);
     padding: 0.5em;
@@ -150,15 +159,19 @@ a:hover {
     color: var(--post-dark-color);
 }
 .cards {
-    margin: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    overflow: auto;
+}
+.cardLink {
+    width: 200px;
 }
 .card {
     position: unset;
+}
+.card img {
+    height: 200px;
 }
 .addItems h3 {
     text-align: center;
@@ -171,6 +184,7 @@ a:hover {
     justify-content: center;
     margin-top: 2rem;
 }
+
 /* .formItems {
     margin: 1rem;
 } */
@@ -229,10 +243,10 @@ option {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
+    margin: 3rem 0 3rem 0;
 }
 .linkProducts {
-    margin: 2em 0 0 1em;
+    margin: 2em 0 3em 0;
 }
 .linkProducts h2 {
     font-size: 4rem;
@@ -240,9 +254,6 @@ option {
 }
 .cardSection {
     width: 25rem;
-}
-.cardImages {
-    height: 45vh;
 }
 
 /* popup */
@@ -374,5 +385,9 @@ option {
     .sideBar {
         display: grid;
         grid-template-columns: 25% 75%;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
     }
 }

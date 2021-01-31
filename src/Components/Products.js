@@ -5,8 +5,8 @@ export class Products extends Component {
     render() {
         const productItem = this.props.products.map( product => (
             <div className="cards m-1" key={product.id}>
-                <div className="card" style={{width: "15rem"}}>
-                    <img src={product.images} style={{objectFit:"cover", height:"25vh"}}  className="card-img-top" alt="..."/>
+                <div className="card" >
+                    <img src={product.images} className="card-img-top cardImage" alt={product.title}/>
                         <div className="card-body">
                             <h6 className="card-title">{product.title}</h6>
                             <p className="card-text">{product.price}</p>
