@@ -7,7 +7,6 @@ import Filter from './Filter';
 import Products from './Products';
 import stars from '../Assets/stars.png';
 import { Link } from 'react-router-dom';
-import MainProduct from './MainProduct';
 
 
 
