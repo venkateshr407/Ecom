@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Categories from './Components/Categories';
+import Header from './Components/Header';
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import Tech from './Components/Tech';
+import Men from './Components/Men';
+import Books from './Components/Books';
+import Home from './Components/Home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends React.Component{
+
+
+  render(){
+    return (
+      <Router>
+        <div className="container">
+          <Route exact path='/' children={<Header/>}/>
+          <Route exact path='/' children={<Categories/>}/>
+          <Route path='/technologies' children={<Tech/>}/>
+          <Route path='/humans' children={<Men/>}/>
+          <Route path='/edu' children={<Books/>}/>
+          <Route path='/accessories' children={<Home/>}/>
+
+
+
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
